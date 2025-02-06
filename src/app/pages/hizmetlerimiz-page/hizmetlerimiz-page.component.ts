@@ -55,5 +55,11 @@ export class HizmetlerimizPageComponent {
       description: 'Etkinlik',
       details: 'Özel organizasyonlar, partiler ve kurumsal etkinlikler için farklı tarzlarda canlı müzik performansları sunuyoruz.'
     },
+    {
+      imageUrl: '/images/hizmetler/dugun.png',
+      description: 'AVM',
+      details: 'Alışveriş merkezlerinde ziyaretçilerinize keyifli anlar yaşatmak için canlı müzik performansları sunuyoruz. Alışveriş deneyimini renklendiren ritimlerimizle AVM etkinliklerinizi unutulmaz kılıyoruz.'
+    },
+
   ];
 }

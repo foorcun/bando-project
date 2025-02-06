@@ -11,7 +11,8 @@ import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.compo
   styleUrls: ['./home-page.component.scss'],
   imports:[HeroComponentComponent, 
     // VerilenHizmetlerComponent, 
-    FiyatlandirmaComponent, DisHijyenBeltComponent ]
+    // FiyatlandirmaComponent, DisHijyenBeltComponent 
+  ]
 })
 export class HomePageComponent {
 }
