@@ -7,7 +7,7 @@ import { HeroComponentComponent } from './hero-component/hero-component.componen
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
-  imports: [HeroComponentComponent] // Include the Hero Component
+  imports: [ HeroComponentComponent]
 })
 export class HomePageComponent {
   confettiLaunched = false;
