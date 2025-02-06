@@ -1,0 +1,17 @@
+.top-navbar-container {
+  display: flex;
+}
+#left-container {
+    // bosluk
+  flex: 6;
+  // border: 3px solid yellow; /* For debugging */
+}
+
+#right-container {
+  flex: 4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}

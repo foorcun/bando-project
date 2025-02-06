@@ -1,0 +1,77 @@
+/* Navbar Styling */
+.navbar {
+  height: 20vh; /* Adjusted height */
+  width: 100%; /* Full width of the viewport */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0); /* Transparent background */
+  color: white;
+  // padding: 0 2rem;
+  // border: 3px solid red; /* For debugging */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  // border: 3px solid green; /* For debugging */
+  // max-width: 1200px; /* Add a max-width for layout consistency */
+}
+
+#logo-container {
+  display: flex;
+  height: 100%;
+  // border: 3px solid yellow; /* For debugging */
+  flex:3;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#logo-container img {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Prevent overflow in container */
+  max-width: 100%; /* Prevent horizontal overflow */
+  object-fit: contain; /* Ensure the image fits properly */
+  // border: 3px solid blue; /* For debugging */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex:7;
+  justify-content: space-between;
+  padding: 3rem;
+  white-space: nowrap;
+
+
+}
+
+.nav-links li {
+  display: inline;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0a500; /* Highlight color */
+}
