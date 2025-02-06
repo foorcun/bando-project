@@ -5,6 +5,7 @@ import { DisHijyenBeltComponent } from './dis-hijyen-belt/dis-hijyen-belt.compon
 import { PhoneButtonComponent } from './phone-button/phone-button.component';
 import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 import confetti from 'canvas-confetti';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -16,16 +17,32 @@ import confetti from 'canvas-confetti';
   ]
 })
 export class HomePageComponent {
-  ngOnInit(): void {
-    this.launchConfetti();
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd && event.url === '/') {
+        this.launchConfetti();
+      }
+    });
   }
 
   launchConfetti(): void {
-    confetti({
-      particleCount: 100,
-      spread: 160,
-      origin: { y: 0.6 }
-    });
+    const duration = 3 * 1000; // 3 seconds
+    const end = Date.now() + duration;
+
+    const frame = () => {
+      confetti({
+        particleCount: 5,
+        spread: 150,
+        origin: { x: Math.random(), y: Math.random() - 0.2 }
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    };
+
+    frame();
   }
+
 }
 
