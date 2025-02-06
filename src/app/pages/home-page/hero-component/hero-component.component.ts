@@ -12,7 +12,7 @@ export class HeroComponentComponent {
   constructor(private router: Router) { }
 
   goContactPage() {
-    this.router.navigate(['contact-page']);
+    this.router.navigate(['hizmetlerimiz-page']);
   }
 
 }
