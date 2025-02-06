@@ -1,0 +1,55 @@
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.call-button {
+  position: fixed;
+  bottom: 3rem; /* Adjust as needed */
+  right: 1.5rem;
+  z-index: 1000;
+}
+
+.call-button button {
+  width: 4rem; /* Circular button size */
+  height: 4rem; /* Circular button size */
+  border-radius: 50%; /* Ensures the button is circular */
+  background-color: #007bff; /* Primary blue */
+  border: none;
+  color: white;
+  font-size: 1.5rem; /* Icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-button button:hover {
+  background-color: #0056b3;
+}
+
+.call-button button:active {
+  transform: scale(0.95);
+}
+
+.call-button button i {
+  animation: wiggle 0.5s ease-in-out 2, pause-wiggle 3s infinite; /* Apply wiggle with pause */
+}
+
+@keyframes pause-wiggle {
+  0%, 90% {
+    animation-timing-function: ease-in-out;
+  }
+}
