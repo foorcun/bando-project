@@ -23,7 +23,7 @@ export class HizmetlerimizPageComponent {
     {
       imageUrl: '/images/hizmetler/gelin-alma.jpeg',
       description: 'Gelin Alma',
-      details: 'Gelin alma merasimlerinde enerjik bando ekibimizle eğlenceyi başlatıyoruz. Davul ve nefesli çalgılarla unutulmaz bir başlangıç sunuyoruz.'
+      details: 'Gelin alma merasimlerinde enerjik bando ekibimizle eğlenceyi başlatıyoruz. Davul, trampet ve nefesli çalgılarla unutulmaz bir başlangıç sunuyoruz.'
     },
     {
       imageUrl: '/images/hizmetler/kina-gecesi.jpeg',
