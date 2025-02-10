@@ -1,0 +1,17 @@
+[debug] [2025-02-10T17:02:42.706Z] ----------------------------------------------------------------------
+[debug] [2025-02-10T17:02:42.707Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-02-10T17:02:42.708Z] CLI Version:   13.29.1
+[debug] [2025-02-10T17:02:42.708Z] Platform:      win32
+[debug] [2025-02-10T17:02:42.708Z] Node Version:  v18.20.5
+[debug] [2025-02-10T17:02:42.709Z] Time:          Mon Feb 10 2025 20:02:42 GMT+0300 (GMT+03:00)
+[debug] [2025-02-10T17:02:42.709Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-10T17:02:42.712Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-10T17:02:42.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-10T17:02:42.783Z] > authorizing via signed-in user (foorcun@gmail.com)
+[debug] [2025-02-10T17:02:42.784Z] [iam] checking project bando-6920a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-10T17:02:42.784Z] Checked if tokens are valid: true, expires at: 1739209898080
+[debug] [2025-02-10T17:02:42.784Z] Checked if tokens are valid: true, expires at: 1739209898080
+[debug] [2025-02-10T17:02:42.785Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bando-6920a:testIamPermissions [none]
+[debug] [2025-02-10T17:02:42.785Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bando-6920a:testIamPermissions x-goog-quota-user=projects/bando-6920a
+[debug] [2025-02-10T17:02:42.785Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bando-6920a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
