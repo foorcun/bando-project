@@ -1,15 +1,19 @@
 <div class="hero-component-container">
-  <!-- Hero Image (Visible on mobile as separate section) -->
-  <div class="hero-photo"></div>
+  <!-- Hero Image (Layered for Cross-Fade Effect) -->
+  <div class="hero-photo" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}"></div>
+  <div class="hero-photo-overlay" 
+       [ngStyle]="{'background-image': 'url(' + nextBackgroundImage + ')'}" 
+       [class.fade-in]="isFading">
+  </div>
 
   <!-- Text Content -->
   <div class="hero-overlay d-flex flex-column justify-content-center align-items-center">
     <p class="lead fw-bold">Etkinlik bandosu</p>
-    <!-- <h1 class="display-4">Canlı Müzik, Unutulmaz Anılar!</h1> -->
     <h1 class="display-4">On7Bando</h1>
     <p class="text-center description">
       En özel anlarınıza canlı müzik ile unutulmaz bir atmosfer katın.
     </p>
     <button class="btn btn-light btn-lg mt-4" (click)="goContactPage()">Hizmetlerimiz</button>
+    <button class="btn btn-dark btn-lg mt-4" (click)="fadeToNextImage()">Arka Planı Değiştir</button>
   </div>
 </div>
