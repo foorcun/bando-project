@@ -23,7 +23,7 @@
   transform: scale(1.05);
 }
 
-/* Overlay Text (Includes Opening Text) */
+/* Overlay Text */
 .overlay-text {
   position: absolute;
   bottom: 0;
@@ -56,7 +56,7 @@
 
   .overlay-text {
     position: relative;
-    background: rgba(0, 0, 0, 0.85); /* Ensures text readability */
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 8px;
     width: 90%;
     margin: 10px auto;
@@ -79,6 +79,7 @@
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   backdrop-filter: blur(10px);
+  height: 100%; /* Ensures uniform height */
 
   &:hover {
     transform: translateY(-8px);
@@ -97,7 +98,7 @@
   }
 
   .card-body {
-    position: absolute;
+    position: relative; /* Changed from absolute */
     bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -105,11 +106,17 @@
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    transform: translateY(100%);
+    transform: translateY(0); /* Always visible */
   }
 
-  &:hover .card-body {
-    transform: translateY(0);
+  /* Ensure Card Body is Always Visible on Mobile */
+  @media (max-width: 768px) {
+    .card-body {
+      position: relative;
+      transform: translateY(0);
+      background: rgba(0, 0, 0, 0.85); /* Ensures text readability */
+      padding: 10px;
+    }
   }
 
   .card-title {
@@ -125,6 +132,6 @@
   .social-icons {
     margin-top: 10px;
     font-size: 1.8rem;
-    color: #E4405F; // Instagram color
+    color: #E4405F; /* Instagram color */
   }
 }
