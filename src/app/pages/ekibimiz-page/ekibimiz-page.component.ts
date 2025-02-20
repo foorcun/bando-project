@@ -11,8 +11,8 @@ export class EkibimizPageComponent {
   members = [
     { name: 'Trompet', role: 'Trompet', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
     { name: 'Saksafon', role: 'Saksafon', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
-    { name: 'Trampet', role: 'Trampet', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
+    { name: 'Trombon', role: 'Trombon', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
     { name: 'Davul', role: 'Davul', instagram: 'https://www.instagram.com/on7bando#', twitter: '#' },
-    { name: 'Trombon', role: 'Trombon', instagram: 'https://www.instagram.com/on7bando', twitter: '#' }
+    { name: 'Trampet', role: 'Trampet', instagram: 'https://www.instagram.com/on7bando', twitter: '#' }
   ];
 }
