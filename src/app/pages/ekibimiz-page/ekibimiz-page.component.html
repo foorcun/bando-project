@@ -1,1 +1,36 @@
-<p>ekibimiz-page works!</p>
+<div class="container text-center mt-4">
+  <!-- Whole Band Photo Section -->
+  <div class="whole-band-container">
+    <img src="/images/ekip/whole-band.jpeg" alt="Tüm Ekip" class="whole-band-img">
+    <div class="overlay-text">
+      <h2>On7bando Ekibi</h2>
+      <p>Birlikte müziğin ritmini yakalıyoruz!</p>
+    </div>
+  </div>
+
+  <!-- Opening Text -->
+  <p class="opening-text">
+    On7bando ailesi olarak ekibimiz profesyonel ve deneyimli müzisyenlerden oluşmaktadır.
+    5 yıldır birlikte çalıştığımız ekibimizde Trompet, Saksafon, Trombon, Davul ve Trampet
+    enstrümanlarını icra eden müzisyenler bulunmaktadır. Unutulmaz anlarınıza eğlence katmak
+    istiyorsanız biz buradayız.
+  </p>
+
+  <!-- Individual Member Cards -->
+  <div class="row">
+    <div class="col-md-4 col-sm-6 mb-4" *ngFor="let member of members; let i = index">
+      <a *ngIf="member.instagram" [href]="member.instagram" target="_blank" class="card-link">
+        <div class="card">
+          <img [src]="'/images/ekip/ekip' + (i + 1) + '.jpeg'" class="card-img-top" alt="Ekip Üyesi">
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text">{{ member.role }}</p>
+            <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
