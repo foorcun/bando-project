@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
 })
 export class EkibimizPageComponent {
   members = [
-    { name: 'Ali', role: 'Vokal', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
-    { name: 'Veli', role: 'Gitar', instagram: '#', twitter: '#' },
-    { name: 'Ayşe', role: 'Bas Gitar', instagram: '#', twitter: '#' },
-    { name: 'Mehmet', role: 'Bateri', instagram: '#', twitter: '#' },
-    { name: 'Zeynep', role: 'Klavye', instagram: '#', twitter: '#' }
+    { name: 'Ali', role: 'Trompet', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
+    { name: 'Veli', role: 'Saksafon', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
+    { name: 'Ayşe', role: 'Trampet', instagram: 'https://www.instagram.com/on7bando', twitter: '#' },
+    { name: 'Mehmet', role: 'Davul', instagram: 'https://www.instagram.com/on7bando#', twitter: '#' },
+    { name: 'Zeynep', role: 'Trombon', instagram: 'https://www.instagram.com/on7bando', twitter: '#' }
   ];
 }
